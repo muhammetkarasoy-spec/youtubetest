@@ -4,7 +4,6 @@ from pytubefix import YouTube # <-- ARTIK BUNU KULLANIYORUZ
 import re
 
 # --- AYARLAR ---
-api_key = st.secrets["AIzaSyAjx6RdWg5AuuRPyMDjBYlJuesj9enydxw"]
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-2.0-flash')
@@ -71,4 +70,5 @@ if st.button("🚀 Analiz Et"):
                     st.info("Mevcut Altyazılar: " + str(mevcut_diller))
                     
         except Exception as e:
+
             st.error(f"Bir hata oluştu: {e}")

@@ -4,6 +4,7 @@ from pytubefix import YouTube # <-- ARTIK BUNU KULLANIYORUZ
 import re
 
 # --- AYARLAR ---
+api_key = st.secrets["API_KEY"]
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-2.0-flash')
@@ -72,3 +73,4 @@ if st.button("🚀 Analiz Et"):
         except Exception as e:
 
             st.error(f"Bir hata oluştu: {e}")
+

@@ -22,8 +22,8 @@ def clean_srt(srt_text):
 
 # --- SAYFA TASARIMI ---
 st.set_page_config(page_title="YouTube Özetleyici v2", page_icon="🔥")
-st.title("🔥 YouTube Asistanı (Pytubefix)")
-st.write("Eski kütüphane çalışmadı mı? Yeni yöntemle özetleyelim.")
+st.title("🔥 YouTube Asistanı")
+st.write("Video izlemeye zamanınız mı yok? Sizin için özetleyelim!")
 
 video_link = st.text_input("YouTube Video Linki:")
 
@@ -73,5 +73,6 @@ if st.button("🚀 Analiz Et"):
         except Exception as e:
 
             st.error(f"Bir hata oluştu: {e}")
+
 
 
